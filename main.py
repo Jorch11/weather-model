@@ -61,8 +61,9 @@ def forecast():
     st.subheader('Forecast Data')
     st.write(forecast.tail())
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["ds", "trend", "yhat","additive","daily/weekly/yearly"])
     """tabs en donde se da una breve explicación de que significa lo que arroja el forecast"""
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["ds", "trend", "yhat","additive","daily/weekly/yearly"])
+
 
     tab1.subheader("ds")
     tab1.write("Fecha a la que se refiere la predicción")
